@@ -1,0 +1,81 @@
+<?php
+include('../../clases/baseDatos.php');
+include('../../clases/usuario.php');
+include('../../clases/usuarioRepositorio.php');
+
+if (!isset($_GET['id']) && !isset($_POST['id'])) {
+    header('location:index.php');
+}
+
+$idUsuario = (isset($_GET['id'])) ? $_GET['id'] : $_POST['id'];
+
+$baseDatos = new BaseDatos();
+$conexion = $baseDatos->conectar();
+
+$usuarioRepositorio = new UsuarioRepositorio($conexion);
+$usuario = $usuarioRepositorio->consultar($idUsuario);
+
+if (isset($_POST['id'])) {
+    $usuario->setIdentificacion($_POST['identificacion']);
+    $usuario->setNombre($_POST['nombre']);
+    $usuario->setApellidos($_POST['apellidos']);
+    $usuario->setTelefono($_POST['telefono']);
+    $usuario->setEmail($_POST['email']);
+
+    $usuarioRepositorio->editar($usuario);
+
+    $conexion->close();    
+
+    header('location:index.php');
+}
+
+$conexion->close();
+?>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <?php include('../navegacion.php') ?>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+            Editar usuario
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="identificacion" class="form-label">Identificación</label>
+                        <input type="text" class="form-control" id="identificacion" name="identificacion" value="<?php echo $usuario->getIdentificacion(); ?>" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $usuario->getNombre(); ?>" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" value="<?php echo $usuario->getApellidos(); ?>" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" value="<?php echo $usuario->getTelefono(); ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $usuario->getEmail(); ?>">
+                    </div>
+                    <input type="hidden" name="id" id="id" value="<?php echo $usuario->getIdUsuario(); ?>">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>      
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+nav{
+    background-color:hsla(118, 100%, 58%, 0.6); /* color barra navega */
+}
+
+nav ul li{
+transition: 0.3s all;
+padding: 10px 12px;                         /* diseño botones barra */
+font-family: 'Heebo', sans-serif;
+    }
+
+    nav ul li:hover{
+    background-color: aqua;             /* transicion barra */
+}
+
+body{
+    background: rgb(188, 239, 236);    /* fondo cuerpo */
+   
+}
+
+body{
+    max-width: 1200px;    /* margen cuerpo */
+    margin: 0 auto;
+}
+
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    color:hsl(26, 93%, 54%);    /* estilo titulo h1 */
+    border-bottom:solid thin rgb(93, 25, 25);
+}
+
+div p{
+    font-family: 'Combo', cursive;           /* estilo parrafo seccion */
+    color: black;
+}
+
+.fondo{
+    background-color: #efd2bc ; /* fondo alterno */
+    padding: 10px;
+}
+
+.center{
+    margin-left:40%;               /* centrar */
+    border-bottom: none;    
+}
+
+h4{
+    font-family: 'Roboto Mono', monospace;   /* letra h4 */
+    color: hsl(0, 89%, 61%);
+}
+
+article h2,h3{
+    border-bottom: 1px solid black; /* barras titulos */
+    }
+    
+    h2,h3{
+        font-family: 'Roboto Mono', monospace;
+        color: hwb(118 2% 2%);    /* estilo tituos h2 , h3 */
+        padding: 10px;
+    }
+
+    
+ .sec1{
+    padding: 2%;
+    background-color: hsl(305, 62%, 73%);
+ }   
+
+ .sec1 img{
+    padding: 2%;
+ }
+
+ .sec1 h2 h4{
+    margin: 5%;
+ }
+
+.fo1 div{
+    background-color: #bef2f2;
+}
+
+ .ban{
+    padding: 2%;
+    width: 90%;
+    margin-left: 25%;
+ }
+
+ .ban img{
+    padding: 2%;
+    margin-top: 40%;
+     }
+
+ .bro{
+    padding: 2%;
+    width: 90%;
+margin-left: 25%;
+ }
+
+ .bro img{
+    padding: 2%;
+    margin-top: 50%;
+ }
+
+ .sep3 img{
+width: 50%;
+margin-left: 25%;
+padding: 5%;
+ }
+ 
+ .sep3{
+    margin-left: 15%;
+    margin-right: 20%;
+    padding: 2%;
+ }
+
+ .fondo2{
+    background-color: hsl(34, 66%, 77%) ; /* fondo alterno */
+    padding: 10px;
+}
+
+.org{
+    padding: 2%;
+    margin-left: 25%;
+    }
+
+    .foot{
+        margin-left: 1%; margin-right: 50%;
+    }
+    .foot img{
+    padding: 5%;
+    width: 100%;
+    margin-left: 15%;
+    }
+    
+    .fondofoot div{
+        background-color: #bef2f2;
+    }
+    
+    .mar{
+        margin-left: 65%;
+    }

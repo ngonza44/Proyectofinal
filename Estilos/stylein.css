@@ -1,0 +1,133 @@
+
+nav{
+    background-color:hsla(118, 100%, 58%, 0.6); /* color barra navega */
+}
+
+nav ul li{
+transition: 0.3s all;
+padding: 10px 12px;                         /* diseño botones barra */
+font-family: 'Heebo', sans-serif;
+    }
+
+.carousel{
+padding: 1%;
+margin-left: 25%;   /* carrusel */
+margin-right: 25%;
+}   
+
+nav ul li:hover{
+    background-color: aqua;             /* transicion barra */
+}
+
+body{
+    background: rgb(188, 239, 236);    /* fondo cuerpo */
+   
+}
+
+body{
+    max-width: 1200px;    /* margen cuerpo */
+    margin: 0 auto;
+}
+
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    color:hsl(326, 60%, 42%);    /* estilo titulo h1 */
+    border-bottom:solid thin rgb(93, 25, 25);
+}
+
+div p{
+    font-family: 'Combo', cursive;           /* estilo parrafo seccion */
+    color: black;
+}
+
+.fondo{
+    background-color:rgb(106, 233, 224); /* fondo alterno */
+    padding: 10px;
+}
+
+h4{
+    font-family: 'Roboto Mono', monospace;   /* letra h4 */
+    color: #f4c58c;
+}
+
+.center{
+    margin-left:40%;               /* centrar */
+    border-bottom:none
+}
+
+.img{
+    padding: 1%;
+    margin-left: 4%;        /* img seccion 2 */
+}
+.parrafo{
+    background-color: rgb(239, 235, 231);
+    padding: 1%;
+    margin-left: 10%;                         /* parrafo seccion 2 */
+    width: 30%;
+    display: inline-block;
+}
+
+.img2{
+    padding: 1%;
+    margin-left: 30%;            /* img2 seccion 2 */
+    width: 60%;
+    
+}
+.parrafo2{
+    background-color: rgb(239, 235, 231);
+    padding: 1%;                                   /* parrafo seccion 2 */
+    display: inline-block;
+}
+
+article h2,h3{
+border-bottom: 1px solid black; /* barras titulos */
+}
+
+h2,h3{
+    font-family: 'Roboto Mono', monospace;
+    color: blueviolet;    /* estilo tituos h2 , h3 */
+    padding: 10px;
+}
+
+
+article ul li a{
+    padding: 15px;
+    text-decoration: none;       /* estilo lista */
+    color: black;
+}
+
+.texto{
+    
+    width: 40%;
+    padding: 2%;       
+    background-color: hsla(63, 87%, 69%, 0.976);  
+    margin-left: 5%;        /* class texto */
+    display: inline-block;
+     }
+
+
+
+.form{
+     background-color: #bef2f2;
+     padding: 2%;                       /* formulario */
+         }
+
+.foot{
+    margin-left: 1%; margin-right: 50%;
+}
+.foot img{
+padding: 5%;
+width: 100%;
+margin-left: 15%;
+}
+
+.fondofoot div{
+    background-color: #bef2f2;
+}
+
+.mar{
+    margin-left: 65%;
+}
+
+

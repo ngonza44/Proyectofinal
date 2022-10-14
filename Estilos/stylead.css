@@ -1,0 +1,80 @@
+nav{
+    background-color:hsla(118, 100%, 58%, 0.6); /* color barra navega */
+}
+
+nav ul li{
+transition: 0.3s all;
+padding: 10px 12px;                         /* diseño botones barra */
+font-family: 'Heebo', sans-serif;
+    }
+
+    nav ul li:hover{
+    background-color: aqua;             /* transicion barra */
+}
+
+body{
+    background: rgb(188, 239, 236);    /* fondo cuerpo */
+   
+}
+
+body{
+    max-width: 1200px;    /* margen cuerpo */
+    margin: 0 auto;
+}
+
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    color:rgb(206, 10, 245);    /* estilo titulo h1 */
+    border-bottom:solid thin rgb(93, 25, 25);
+}
+
+div p{
+    font-family: 'Combo', cursive;           /* estilo parrafo seccion */
+    color: black;
+}
+
+.mar{
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sec4 img{
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.sec5{
+    padding: 2%;
+    margin: 2%;
+}
+.sec5 img{
+    padding:13%;
+   width: 60%;
+   height: 50%;
+   margin-left: 15%;
+
+}
+
+.foot{
+    margin-left: 1%; margin-right: 50%;
+}
+.foot img{
+padding: 5%;
+width: 100%;
+margin-left: 15%;
+}
+
+.fondofoot div{
+    background-color: #bef2f2;
+}
+
+.mar{
+    margin-left: 45%;
+}
+
+
+
+
+
